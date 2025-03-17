@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="N/A" external.linked.project.path="C:\repositories\M323\08_MiniProjekt\untitled" external.root.project.path="$MODULE_DIR$/../../08_MiniProjekt/untitled" external.system.id="SBT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../08_MiniProjekt/untitled">
+      <sourceFolder url="file://$MODULE_DIR$/../../08_MiniProjekt/untitled/src/main/scala" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../08_MiniProjekt/untitled/src/test/scala" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/../../08_MiniProjekt/untitled/project/target" />
+      <excludeFolder url="file://$MODULE_DIR$/../../08_MiniProjekt/untitled/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="sbt: scala-sdk-3.3.5" level="project" />
+  </component>
+</module>
