@@ -6,3 +6,6 @@ lazy val root = (project in file("."))
   .settings(
     name := "QueenProblem"
   )
+libraryDependencies += "org.typelevel" %% "cats-effect" % "3.5.7"
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.18" % "test"
+libraryDependencies += "org.scalatestplus" %% "scalacheck-1-17" % "3.2.18.0" % "test"

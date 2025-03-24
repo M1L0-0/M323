@@ -24,7 +24,7 @@ class Chess {
     var currentField = nextField
     var s = solutions
     if localBoard.length >= 8 then {
-      s = s.appended(board)
+      s = s.appended(board).distinct
     }
     if currentField(0) == -1 && currentField(1) == -1 || currentField(1) > localBoard.length+1 then {
       if board.takeRight(1).isEmpty then return s
