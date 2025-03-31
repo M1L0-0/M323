@@ -1,4 +1,4 @@
-import pure.Chess
+import pure.{Chess, Point}
 import impure.SystemIO
 
 import java.time.LocalDateTime
@@ -9,9 +9,9 @@ import cats.syntax.all.*
 @main
 def main(): Unit = {
   val io = for {
-    solutions <- Ref.of[IO, List[List[List[(Int, Int)]]]](List())
+    solutions <- Ref.of[IO, List[List[List[pure.Point]]]](List())
     execs = (1 to 8).toList.parTraverse { i =>
-      Chess().findBoard(List(), (i, 1), List(), 0).pure[IO]
+      Chess().findBoard(List(), Point(i, 1), List(), 0).pure[IO]
     }
     results <- execs
     _ <- solutions.set(results)
@@ -19,9 +19,10 @@ def main(): Unit = {
   } yield p
 
   val startTime = LocalDateTime.now()
-  var solutions: List[List[(Int, Int)]] = List()
+  var solutions: List[List[pure.Point]] = List()
+  //executes pure function in a loop
   (1 to 8).foreach(i => {
-    solutions = solutions.appendedAll(Chess().findBoard(List(), (i, 1), List(), 0))
+    solutions = solutions.appendedAll(Chess().findBoard(List(), Point(i, 1), List(), 0))
   })
 
   println("Serial execution: ")

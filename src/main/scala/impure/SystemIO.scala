@@ -1,23 +1,23 @@
 package impure
 
+import pure.Point
+
 import java.time.LocalDateTime
 import java.time.temporal.ChronoUnit
 
-import cats.effect.{IO, IOApp, Sync}
-import cats.effect.kernel.Ref
-import cats.syntax.all.*
+import cats.effect.IO
 import cats.effect.unsafe.implicits.global
-import scala.concurrent.duration.DurationInt
 
 class SystemIO {
-  def printRes(solutions: List[List[(Int, Int)]], startTime: LocalDateTime) = {
+  def printRes(solutions: List[List[pure.Point]], startTime: LocalDateTime): Unit = {
     println("Found " + solutions.length + " total solutions. " + solutions.distinct.length + " unique solutions")
     println("Execution finished after[ms]: " + startTime.until(LocalDateTime.now(), ChronoUnit.MILLIS))
   }
 
-  def execute(io: IO[List[List[List[(Int, Int)]]]]): Long = {
-    var startTime = LocalDateTime.now()
-    var s = io.unsafeRunSync().flatten
+  def execute(io: IO[List[List[List[Point]]]]): Long = {
+    val startTime = LocalDateTime.now()
+    var s: List[List[pure.Point]]  = List()
+    s = io.unsafeRunSync().flatten
     printRes(s, startTime)
     startTime.until(LocalDateTime.now(), ChronoUnit.MILLIS)
   }
