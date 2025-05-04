@@ -1,72 +1,69 @@
 package pure
 
-class Point(val x: Int, val y: Int) {
-  //Experimental class to display pipelines
-  private class PipelineWrapper(val board: Option[List[Point]]) {
-    def check(check: String): PipelineWrapper = {
-      if this.board.isEmpty then None
-      if check == "across" then {
-        if checkAcross(this.board.get) then Option(this)
-        else None
-      }
-      else if check == "straight" then {
-        if checkStraight(this.board.get) then Option(this)
-        else None
-      } else None
-    }
+import scala.annotation.tailrec
+
+def check(check: String, field: (Int, Int), board: Option[List[(Int, Int)]]): Option[List[(Int, Int)]] = {
+  if board.isEmpty then None
+  else if check == "across" then {
+    if checkAcross(board.get, field) then board
+    else None
   }
+  else if check == "straight" then {
+    if checkStraight(board.get, field) then board
+    else None
+  } else None
+}
 
-  def toTuple: (Int, Int) = (x, y)
+// [Presentation]: filters
+private def checkStraight(board: List[(Int, Int)], field: (Int, Int)): Boolean = {
+  !board.exists(b => b(0) == field(0) || b(1) == field(1))
+}
 
-  private def checkStraight(board: List[Point]): Boolean = {
-    !board.exists(b => b.x == this.x || b.y == this.y)
-  }
+private def checkAcross(board: List[(Int, Int)], field: (Int, Int)): Boolean = {
+  !board.exists(b => (b(1) - field(1)).abs == (b(0) - field(0)).abs)
+}
 
-  private def checkAcross(board: List[Point]): Boolean = {
-    !board.exists(b => (b.y - this.y).abs == (b.x - this.x).abs)
-  }
+def checkMove(board: List[(Int, Int)], field:(Int, Int)): Boolean = {
+  // this.checkAcross(board) && this.checkStraight(board)
+  // [Presentation]: Pipeline example
+  check("across", field, check("straight", field, Option(board))).isDefined
+}
 
-  def checkMove(board: List[Point]): Boolean = {
-    // this.checkAcross(board) && this.checkStraight(board)
-    PipelineWrapper(Option(board)).check("across").check("straight").board.isEmpty
-  }
-
-  private def increment: Option[Point] = {
-    // check out of bounds
-    this match {
-      case (p) if p.x > 0 && p.x <= 8 && p.y > 0 && p.y <= 8 =>
-        if (p.x < 8) Option(Point(p.x + 1, p.y))
-        else if (p.y < 8) Option(Point(1, p.y + 1))
-        else None
-      case _ => None
-    }
-  }
-
-  def incrementField: Point = {
-    val p = this.increment
-    if p.isEmpty then Point(-1, -1) else p.get
+// [Presentation]: matcher
+private def increment(field: (Int, Int)): Option[(Int, Int)] = {
+  field match {
+    case f if f(0) > 0 && f(1) <= 8 && f(1) > 0 && f(1) <= 8 =>
+      if (field(0) < 8) Option((f(0) + 1, f(1)))
+      else if (field(1) < 8) Option((1, f(1) + 1))
+      else None
+    case _ => None
   }
 }
 
-class Chess {
-  def findBoard(board: List[Point], nextField: Point, solutions: List[List[Point]], i: Int): List[List[Point]] = {
-    var localBoard = board
-    var currentField = nextField
-    var s = solutions
-    if localBoard.length >= 8 then {
-      s = s.appended(board).distinct
-    }
-    if currentField.x == -1 && currentField.y == -1 || currentField.y > localBoard.length + 1 then {
-      if board.takeRight(1).isEmpty then return s
-      val field = board.takeRight(1).head
-      localBoard = board.dropRight(1)
-      currentField = field
-    }
-    if currentField.checkMove(board) then {
-      localBoard = localBoard.appended(currentField)
-    }
-    // Continue recursion if maximum recursion depth is not yet reached
-    if i < 3100 then findBoard(localBoard, currentField.incrementField, s, i + 1)
-    else s
+def incrementField(field: (Int, Int)): (Int, Int) = {
+  val p = increment(field)
+  if p.isEmpty then (-1, -1) else p.get
+}
+
+// [Presentation]: Recursion: Show difference with and without tailRec to find last solution
+// @tailrec
+def findBoard(board: List[(Int, Int)], nextField: (Int, Int), solutions: List[List[(Int, Int)]], i: Int): List[List[(Int, Int)]] = {
+  var localBoard = board
+  var currentField = nextField
+  var s = solutions
+  if localBoard.length >= 8 then {
+    s = s.appended(board).distinct
   }
+  if currentField(0) == -1 && currentField(1) == -1 || currentField(1) > localBoard.length + 1 then {
+    if board.takeRight(1).isEmpty then return s
+    val field = board.takeRight(1).head
+    localBoard = board.dropRight(1)
+    currentField = field
+  }
+  if checkMove(board, currentField) then {
+    localBoard = localBoard.appended(currentField)
+  }
+  // Continue recursion if maximum recursion depth is not yet reached
+  if i < 10000 then findBoard(localBoard, incrementField(currentField), s, i + 1)
+  else s
 }
