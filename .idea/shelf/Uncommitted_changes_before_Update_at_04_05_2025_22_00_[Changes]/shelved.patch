@@ -1,0 +1,306 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"385fc262-0b3b-4b3b-adeb-527c88894bc4\" name=\"Changes\" comment=\"End of lesson commit\">\r\n      <change afterPath=\"$PROJECT_DIR$/.gitignore\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/sbt.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/vcs.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/build.sbt\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/project/build.properties\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ExternalProjectsData\">\r\n    <projectState path=\"$PROJECT_DIR$\">\r\n      <ProjectState />\r\n    </projectState>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\"><![CDATA[{\r\n  \"lastFilter\": {\r\n    \"state\": \"OPEN\",\r\n    \"assignee\": \"M1L0-0\"\r\n  }\r\n}]]></component>\r\n  <component name=\"GithubPullRequestsUISettings\"><![CDATA[{\r\n  \"selectedUrlAndAccountId\": {\r\n    \"url\": \"https://github.com/M1L0-0/M323.git\",\r\n    \"accountId\": \"188ff00a-62af-4978-9864-5d68043ffd33\"\r\n  }\r\n}]]></component>\r\n  <component name=\"ProjectCodeStyleSettingsMigration\">\r\n    <option name=\"version\" value=\"2\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 2\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2u7U9JzCxYKIVxbqBzpOvSUU9Yi\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;Application.main.executor&quot;: &quot;Run&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;,\r\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.scala.compiler.ScalaCompileServerForm&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"main\" type=\"Application\" factoryName=\"Application\" temporary=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"main\" />\r\n      <module name=\"QueenProblem\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\"-J-Xss2g\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.main\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"ScalaProjectSettings\">\r\n    <option name=\"migrateConfigurationsNotificationShown\" value=\"true\" />\r\n    <option name=\"scala3DisclaimerShown\" value=\"true\" />\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"385fc262-0b3b-4b3b-adeb-527c88894bc4\" name=\"Changes\" comment=\"\" />\r\n      <created>1741598956705</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1741598956705</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"End of lesson commit\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1742207263802</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1742207263802</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"End of lesson commit\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"End of lesson commit\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 6e4ff5392ad0c6a5fedcfd138a36a9ed2ce9dadb)
++++ b/.idea/workspace.xml	(date 1746388607119)
+@@ -4,13 +4,8 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="385fc262-0b3b-4b3b-adeb-527c88894bc4" name="Changes" comment="End of lesson commit">
+-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/project/build.properties" afterDir="false" />
++    <list default="true" id="385fc262-0b3b-4b3b-adeb-527c88894bc4" name="Changes" comment="additions to ChessTest and Chess.scala">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -37,6 +32,9 @@
+     "accountId": "188ff00a-62af-4978-9864-5d68043ffd33"
+   }
+ }]]></component>
++  <component name="ProblemsViewState">
++    <option name="selectedTabId" value="CurrentFile" />
++  </component>
+   <component name="ProjectCodeStyleSettingsMigration">
+     <option name="version" value="2" />
+   </component>
+@@ -49,27 +47,199 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;Application.main.executor&quot;: &quot;Run&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.scala.compiler.ScalaCompileServerForm&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "Application.Unnamed.executor": "Run",
++    "Application.main.executor": "Run",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "Scala REPL.Unnamed.executor": "Run",
++    "ScalaTest.ChessTest.checkMove should return false for invalid moves.executor": "Run",
++    "ScalaTest.ChessTest.checkMove should return true for valid moves.executor": "Run",
++    "ScalaTest.ChessTest.executor": "Run",
++    "ScalaTest.ChessTest.incrementField should properly increment the column in base cases.executor": "Run",
++    "ScalaTest.ChessTest.incrementField should properly increment the row if the column is 8. Column should be set to 1.executor": "Run",
++    "ScalaTest.ChessTest.incrementField should properly increment the row if the column is 8.executor": "Run",
++    "ScalaTest.ChessTest.incrementField should properly increment the row in base cases.executor": "Run",
++    "ScalaTest.ChessTest.incrementField should return (-1, -1) if field is (8, 8) or out of bounds.executor": "Run",
++    "git-widget-placeholder": "master",
++    "kotlin-language-version-configured": "true",
++    "settings.editor.selected.configurable": "org.jetbrains.plugins.scala.compiler.ScalaCompileServerForm"
+   }
+-}</component>
++}]]></component>
+   <component name="RunManager">
+-    <configuration name="main" type="Application" factoryName="Application" temporary="true">
+-      <option name="MAIN_CLASS_NAME" value="main" />
++    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
++      <option name="ALTERNATIVE_JRE_PATH" value="23" />
++      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
++      <option name="MAIN_CLASS_NAME" value="jdk.jpackage.main.Main" />
++      <module name="QueenProblem" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="Unnamed" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
++      <module name="QueenProblem" />
++      <option name="allowRunningInParallel" value="false" />
++      <option name="javaOptions" value="" />
++      <option name="myConsoleArgs" value="-usejavacp" />
++      <option name="projectPathOnTarget" />
++      <option name="selectedOptions">
++        <list />
++      </option>
++      <option name="workingDirectory" value="$PROJECT_DIR$" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="ChessTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
++      <module name="QueenProblem" />
++      <option name="VMParameters" value="" />
++      <option name="allowRunningInParallel" value="false" />
++      <option name="alternativeJrePath" />
++      <option name="alternativeJrePathEnabled" value="false" />
++      <option name="classpathModifications">
++        <list />
++      </option>
++      <option name="envs">
++        <map />
++      </option>
++      <option name="passParentEnvs" value="true" />
++      <option name="programParameters" value="" />
++      <option name="projectPathOnTarget" />
++      <option name="selectedOptions">
++        <list />
++      </option>
++      <option name="testKind" value="Class" />
++      <option name="workingDirectory" value="C:\repositories\M323\08_MiniProjekt\QueenProblem" />
++      <option name="testClassPath" value="pure.ChessTest" />
++      <option name="workingDirectory" value="C:\repositories\M323\08_MiniProjekt\QueenProblem" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="ChessTest.incrementField should properly increment the column in base cases" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
++      <module name="QueenProblem" />
++      <option name="VMParameters" value="" />
++      <option name="allowRunningInParallel" value="false" />
++      <option name="alternativeJrePath" />
++      <option name="alternativeJrePathEnabled" value="false" />
++      <option name="classpathModifications">
++        <list />
++      </option>
++      <option name="envs">
++        <map />
++      </option>
++      <option name="passParentEnvs" value="true" />
++      <option name="programParameters" value="" />
++      <option name="projectPathOnTarget" />
++      <option name="selectedOptions">
++        <list />
++      </option>
++      <option name="testKind" value="Test name" />
++      <option name="workingDirectory" value="C:\repositories\M323\08_MiniProjekt\QueenProblem" />
++      <option name="testClassPath" value="pure.ChessTest" />
++      <option name="testName" value="incrementField should properly increment the column in base cases" />
++      <option name="workingDirectory" value="C:\repositories\M323\08_MiniProjekt\QueenProblem" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="ChessTest.incrementField should properly increment the row if the column is 8" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
++      <module name="QueenProblem" />
++      <option name="VMParameters" value="" />
++      <option name="allowRunningInParallel" value="false" />
++      <option name="alternativeJrePath" />
++      <option name="alternativeJrePathEnabled" value="false" />
++      <option name="classpathModifications">
++        <list />
++      </option>
++      <option name="envs">
++        <map />
++      </option>
++      <option name="passParentEnvs" value="true" />
++      <option name="programParameters" value="" />
++      <option name="projectPathOnTarget" />
++      <option name="selectedOptions">
++        <list />
++      </option>
++      <option name="testKind" value="Test name" />
++      <option name="workingDirectory" value="C:\repositories\M323\08_MiniProjekt\QueenProblem" />
++      <option name="testClassPath" value="pure.ChessTest" />
++      <option name="testName" value="incrementField should properly increment the row if the column is 8" />
++      <option name="workingDirectory" value="C:\repositories\M323\08_MiniProjekt\QueenProblem" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="ChessTest.incrementField should properly increment the row if the column is 8. Column should be set to 1" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+       <module name="QueenProblem" />
+-      <option name="PROGRAM_PARAMETERS" value="-J-Xss2g" />
++      <option name="VMParameters" value="" />
++      <option name="allowRunningInParallel" value="false" />
++      <option name="alternativeJrePath" />
++      <option name="alternativeJrePathEnabled" value="false" />
++      <option name="classpathModifications">
++        <list />
++      </option>
++      <option name="envs">
++        <map />
++      </option>
++      <option name="passParentEnvs" value="true" />
++      <option name="programParameters" value="" />
++      <option name="projectPathOnTarget" />
++      <option name="selectedOptions">
++        <list />
++      </option>
++      <option name="testKind" value="Test name" />
++      <option name="workingDirectory" value="C:\repositories\M323\08_MiniProjekt\QueenProblem" />
++      <option name="testClassPath" value="pure.ChessTest" />
++      <option name="testName" value="incrementField should properly increment the row if the column is 8. Column should be set to 1" />
++      <option name="workingDirectory" value="C:\repositories\M323\08_MiniProjekt\QueenProblem" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
++    <configuration name="ChessTest.incrementField should return (-1, -1) if field is (8, 8) or out of bounds" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
++      <module name="QueenProblem" />
++      <option name="VMParameters" value="" />
++      <option name="allowRunningInParallel" value="false" />
++      <option name="alternativeJrePath" />
++      <option name="alternativeJrePathEnabled" value="false" />
++      <option name="classpathModifications">
++        <list />
++      </option>
++      <option name="envs">
++        <map />
++      </option>
++      <option name="passParentEnvs" value="true" />
++      <option name="programParameters" value="" />
++      <option name="projectPathOnTarget" />
++      <option name="selectedOptions">
++        <list />
++      </option>
++      <option name="testKind" value="Test name" />
++      <option name="workingDirectory" value="C:\repositories\M323\08_MiniProjekt\QueenProblem" />
++      <option name="testClassPath" value="pure.ChessTest" />
++      <option name="testName" value="incrementField should return (-1, -1) if field is (8, 8) or out of bounds" />
++      <option name="workingDirectory" value="C:\repositories\M323\08_MiniProjekt\QueenProblem" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <list>
++      <item itemvalue="Application.Unnamed" />
++      <item itemvalue="Scala REPL.Unnamed" />
++      <item itemvalue="ScalaTest.ChessTest" />
++      <item itemvalue="ScalaTest.ChessTest.incrementField should properly increment the column in base cases" />
++      <item itemvalue="ScalaTest.ChessTest.incrementField should properly increment the row if the column is 8" />
++      <item itemvalue="ScalaTest.ChessTest.incrementField should properly increment the row if the column is 8. Column should be set to 1" />
++      <item itemvalue="ScalaTest.ChessTest.incrementField should return (-1, -1) if field is (8, 8) or out of bounds" />
++    </list>
+     <recent_temporary>
+       <list>
+-        <item itemvalue="Application.main" />
++        <item itemvalue="ScalaTest.ChessTest" />
++        <item itemvalue="ScalaTest.ChessTest.incrementField should return (-1, -1) if field is (8, 8) or out of bounds" />
++        <item itemvalue="ScalaTest.ChessTest.incrementField should properly increment the row if the column is 8. Column should be set to 1" />
++        <item itemvalue="ScalaTest.ChessTest.incrementField should properly increment the row if the column is 8" />
++        <item itemvalue="ScalaTest.ChessTest.incrementField should properly increment the column in base cases" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -94,11 +264,54 @@
+       <option name="project" value="LOCAL" />
+       <updated>1742207263802</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="End of lesson commit">
++      <option name="closed" value="true" />
++      <created>1742207617551</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1742207617551</updated>
++    </task>
++    <task id="LOCAL-00003" summary="fix">
++      <option name="closed" value="true" />
++      <created>1742207958857</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1742207958857</updated>
++    </task>
++    <task id="LOCAL-00004" summary="end of lesson commit">
++      <option name="closed" value="true" />
++      <created>1742813265288</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1742813265288</updated>
++    </task>
++    <task id="LOCAL-00005" summary="end of lesson commit">
++      <option name="closed" value="true" />
++      <created>1743414382770</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1743414382770</updated>
++    </task>
++    <task id="LOCAL-00006" summary="additions to ChessTest and Chess.scala">
++      <option name="closed" value="true" />
++      <created>1746388459892</created>
++      <option name="number" value="00006" />
++      <option name="presentableId" value="LOCAL-00006" />
++      <option name="project" value="LOCAL" />
++      <updated>1746388459892</updated>
++    </task>
++    <option name="localTasksCounter" value="7" />
+     <servers />
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="End of lesson commit" />
+-    <option name="LAST_COMMIT_MESSAGE" value="End of lesson commit" />
++    <MESSAGE value="fix" />
++    <MESSAGE value="end of lesson commit" />
++    <MESSAGE value="additions to ChessTest and Chess.scala" />
++    <option name="LAST_COMMIT_MESSAGE" value="additions to ChessTest and Chess.scala" />
+   </component>
+ </project>
+\ No newline at end of file
